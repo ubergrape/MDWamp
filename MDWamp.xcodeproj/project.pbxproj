@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		756F04F61BA976A8004C6E92 /* base64.c in Sources */ = {isa = PBXBuildFile; fileRef = 756F04F21BA976A8004C6E92 /* base64.c */; settings = {ASSET_TAGS = (); }; };
+		756F04F71BA976A8004C6E92 /* base64.h in Headers */ = {isa = PBXBuildFile; fileRef = 756F04F31BA976A8004C6E92 /* base64.h */; settings = {ASSET_TAGS = (); }; };
+		756F04F81BA976A8004C6E92 /* NSData+SRB64Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = 756F04F41BA976A8004C6E92 /* NSData+SRB64Additions.h */; settings = {ASSET_TAGS = (); }; };
+		756F04F91BA976A8004C6E92 /* NSData+SRB64Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 756F04F51BA976A8004C6E92 /* NSData+SRB64Additions.m */; settings = {ASSET_TAGS = (); }; };
 		7604D70B185B499D0087773E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7604D70A185B499D0087773E /* Cocoa.framework */; };
 		7604D715185B499D0087773E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7604D713185B499D0087773E /* InfoPlist.strings */; };
 		7604D720185B499D0087773E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7604D71F185B499D0087773E /* XCTest.framework */; };
@@ -108,6 +112,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		756F04F21BA976A8004C6E92 /* base64.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = base64.c; sourceTree = "<group>"; };
+		756F04F31BA976A8004C6E92 /* base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = base64.h; sourceTree = "<group>"; };
+		756F04F41BA976A8004C6E92 /* NSData+SRB64Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+SRB64Additions.h"; sourceTree = "<group>"; };
+		756F04F51BA976A8004C6E92 /* NSData+SRB64Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+SRB64Additions.m"; sourceTree = "<group>"; };
 		7604D707185B499D0087773E /* MDWamp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MDWamp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7604D70A185B499D0087773E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		7604D712185B499D0087773E /* MDWamp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "MDWamp-Info.plist"; path = "../MDWampFramework/MDWamp-Info.plist"; sourceTree = "<group>"; };
@@ -261,6 +269,10 @@
 				76F060F3185E3910008DBFC4 /* MDWampMessage.h */,
 				76F060F4185E3910008DBFC4 /* MDWampMessage.m */,
 				7646E523185BBAEF004990DD /* MDWampClientDelegate.h */,
+				756F04F21BA976A8004C6E92 /* base64.c */,
+				756F04F31BA976A8004C6E92 /* base64.h */,
+				756F04F41BA976A8004C6E92 /* NSData+SRB64Additions.h */,
+				756F04F51BA976A8004C6E92 /* NSData+SRB64Additions.m */,
 			);
 			path = MDWamp;
 			sourceTree = "<group>";
@@ -272,9 +284,11 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				756F04F81BA976A8004C6E92 /* NSData+SRB64Additions.h in Headers */,
 				76F060F5185E3910008DBFC4 /* MDWampMessage.h in Headers */,
 				7646E524185BBAEF004990DD /* MDWampClientDelegate.h in Headers */,
 				76FD804B185BB3F000D1B5C0 /* MDWamp.h in Headers */,
+				756F04F71BA976A8004C6E92 /* base64.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,7 +445,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				756F04F91BA976A8004C6E92 /* NSData+SRB64Additions.m in Sources */,
 				76F060F6185E3910008DBFC4 /* MDWampMessage.m in Sources */,
+				756F04F61BA976A8004C6E92 /* base64.c in Sources */,
 				76FD804C185BB3F000D1B5C0 /* MDWamp.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
