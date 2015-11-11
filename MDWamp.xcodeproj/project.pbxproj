@@ -7,24 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		756F04F61BA976A8004C6E92 /* base64.c in Sources */ = {isa = PBXBuildFile; fileRef = 756F04F21BA976A8004C6E92 /* base64.c */; settings = {ASSET_TAGS = (); }; };
-		756F04F71BA976A8004C6E92 /* base64.h in Headers */ = {isa = PBXBuildFile; fileRef = 756F04F31BA976A8004C6E92 /* base64.h */; settings = {ASSET_TAGS = (); }; };
-		756F04F81BA976A8004C6E92 /* NSData+SRB64Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = 756F04F41BA976A8004C6E92 /* NSData+SRB64Additions.h */; settings = {ASSET_TAGS = (); }; };
-		756F04F91BA976A8004C6E92 /* NSData+SRB64Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 756F04F51BA976A8004C6E92 /* NSData+SRB64Additions.m */; settings = {ASSET_TAGS = (); }; };
+		756F04F61BA976A8004C6E92 /* base64.c in Sources */ = {isa = PBXBuildFile; fileRef = 756F04F21BA976A8004C6E92 /* base64.c */; };
+		756F04F71BA976A8004C6E92 /* base64.h in Headers */ = {isa = PBXBuildFile; fileRef = 756F04F31BA976A8004C6E92 /* base64.h */; };
+		756F04F81BA976A8004C6E92 /* NSData+SRB64Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = 756F04F41BA976A8004C6E92 /* NSData+SRB64Additions.h */; };
+		756F04F91BA976A8004C6E92 /* NSData+SRB64Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 756F04F51BA976A8004C6E92 /* NSData+SRB64Additions.m */; };
 		7604D70B185B499D0087773E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7604D70A185B499D0087773E /* Cocoa.framework */; };
 		7604D715185B499D0087773E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7604D713185B499D0087773E /* InfoPlist.strings */; };
 		7604D720185B499D0087773E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7604D71F185B499D0087773E /* XCTest.framework */; };
 		7604D721185B499E0087773E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7604D70A185B499D0087773E /* Cocoa.framework */; };
 		7604D724185B499E0087773E /* MDWamp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7604D707185B499D0087773E /* MDWamp.framework */; };
 		7604D767185B6B880087773E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7604D73A185B4A7B0087773E /* Foundation.framework */; };
-		7604D799185B6E8A0087773E /* libSocketRocket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7604D792185B6E6E0087773E /* libSocketRocket.a */; };
-		7604D79A185B6E910087773E /* SocketRocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7604D794185B6E6E0087773E /* SocketRocket.framework */; };
 		762A2F1118772302001BE6FE /* MDWamp.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 76FD8049185BB3F000D1B5C0 /* MDWamp.h */; };
 		762A2F1218772302001BE6FE /* MDWampMessage.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 76F060F3185E3910008DBFC4 /* MDWampMessage.h */; };
 		762A2F1318772302001BE6FE /* MDWampClientDelegate.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7646E523185BBAEF004990DD /* MDWampClientDelegate.h */; };
 		7646E524185BBAEF004990DD /* MDWampClientDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 7646E523185BBAEF004990DD /* MDWampClientDelegate.h */; };
-		7646E535185BCEBC004990DD /* SocketRocket.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7604D794185B6E6E0087773E /* SocketRocket.framework */; };
-		7646E53B185BCF92004990DD /* SocketRocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7604D794185B6E6E0087773E /* SocketRocket.framework */; };
 		7659705918620990008B7709 /* XCTAsyncTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 7659705818620990008B7709 /* XCTAsyncTestCase.m */; };
 		76CCC6F6185BD1F10056AB98 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 76CCC6EE185BD1F10056AB98 /* InfoPlist.strings */; };
 		76CCC6F7185BD1F10056AB98 /* MDWampClientDelegateMock.m in Sources */ = {isa = PBXBuildFile; fileRef = 76CCC6F1185BD1F10056AB98 /* MDWampClientDelegateMock.m */; };
@@ -47,34 +43,6 @@
 			remoteGlobalIDString = 7604D706185B499D0087773E;
 			remoteInfo = MDWamp;
 		};
-		7604D791185B6E6E0087773E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7604D78A185B6E6E0087773E /* SocketRocket.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = F6B2082D1450F597009315AF;
-			remoteInfo = SocketRocket;
-		};
-		7604D793185B6E6E0087773E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7604D78A185B6E6E0087773E /* SocketRocket.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = F668C880153E91210044DBAC;
-			remoteInfo = SocketRocketOSX;
-		};
-		7604D795185B6E6E0087773E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7604D78A185B6E6E0087773E /* SocketRocket.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = F6BDA802145900D200FE3253;
-			remoteInfo = SRWebSocketTests;
-		};
-		7604D797185B6E6E0087773E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7604D78A185B6E6E0087773E /* SocketRocket.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = F62417E314D52F3C003CE997;
-			remoteInfo = TestChat;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -96,7 +64,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 7;
 			files = (
-				7646E535185BCEBC004990DD /* SocketRocket.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,7 +94,6 @@
 		7604D74A185B4A7B0087773E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		7604D766185B6B880087773E /* libMDWamp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMDWamp.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7604D76A185B6B880087773E /* libMDWamp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "libMDWamp-Prefix.pch"; path = "../libMDWamp/libMDWamp-Prefix.pch"; sourceTree = "<group>"; };
-		7604D78A185B6E6E0087773E /* SocketRocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SocketRocket.xcodeproj; path = lib/SocketRocket/SocketRocket.xcodeproj; sourceTree = "<group>"; };
 		7646E523185BBAEF004990DD /* MDWampClientDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDWampClientDelegate.h; sourceTree = "<group>"; };
 		76491D8A1863696000B435E2 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
 		76491D8C1863696700B435E2 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
@@ -144,6 +110,7 @@
 		76F060F4185E3910008DBFC4 /* MDWampMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDWampMessage.m; sourceTree = "<group>"; };
 		76FD8049185BB3F000D1B5C0 /* MDWamp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDWamp.h; sourceTree = "<group>"; };
 		76FD804A185BB3F000D1B5C0 /* MDWamp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDWamp.m; sourceTree = "<group>"; };
+		A351D3F51BF39F6500028C46 /* Socket Rocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "Socket Rocket.xcodeproj"; path = "../Socket Rocket/Socket Rocket.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,7 +118,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7604D79A185B6E910087773E /* SocketRocket.framework in Frameworks */,
 				7604D70B185B499D0087773E /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -163,7 +129,6 @@
 				7604D721185B499E0087773E /* Cocoa.framework in Frameworks */,
 				7604D724185B499E0087773E /* MDWamp.framework in Frameworks */,
 				7604D720185B499D0087773E /* XCTest.framework in Frameworks */,
-				7646E53B185BCF92004990DD /* SocketRocket.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,7 +136,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7604D799185B6E8A0087773E /* libSocketRocket.a in Frameworks */,
 				7604D767185B6B880087773E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -185,7 +149,7 @@
 				76FD803B185BB3C800D1B5C0 /* MDWamp */,
 				76CCC6ED185BD1F10056AB98 /* MDWampTests */,
 				7604D711185B499D0087773E /* Supporting Files */,
-				7604D78A185B6E6E0087773E /* SocketRocket.xcodeproj */,
+				A351D3F51BF39F6500028C46 /* Socket Rocket.xcodeproj */,
 				7604D709185B499D0087773E /* Frameworks */,
 				7604D708185B499D0087773E /* Products */,
 			);
@@ -227,17 +191,6 @@
 			path = MDWamp;
 			sourceTree = "<group>";
 		};
-		7604D78B185B6E6E0087773E /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				7604D792185B6E6E0087773E /* libSocketRocket.a */,
-				7604D794185B6E6E0087773E /* SocketRocket.framework */,
-				7604D796185B6E6E0087773E /* SRWebSocketTests.octest */,
-				7604D798185B6E6E0087773E /* TestChat.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		76CCC6ED185BD1F10056AB98 /* MDWampTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -275,6 +228,13 @@
 				756F04F51BA976A8004C6E92 /* NSData+SRB64Additions.m */,
 			);
 			path = MDWamp;
+			sourceTree = "<group>";
+		};
+		A351D3F61BF39F6500028C46 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -377,8 +337,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 7604D78B185B6E6E0087773E /* Products */;
-					ProjectRef = 7604D78A185B6E6E0087773E /* SocketRocket.xcodeproj */;
+					ProductGroup = A351D3F61BF39F6500028C46 /* Products */;
+					ProjectRef = A351D3F51BF39F6500028C46 /* Socket Rocket.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -389,37 +349,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		7604D792185B6E6E0087773E /* libSocketRocket.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libSocketRocket.a;
-			remoteRef = 7604D791185B6E6E0087773E /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		7604D794185B6E6E0087773E /* SocketRocket.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = SocketRocket.framework;
-			remoteRef = 7604D793185B6E6E0087773E /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		7604D796185B6E6E0087773E /* SRWebSocketTests.octest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = SRWebSocketTests.octest;
-			remoteRef = 7604D795185B6E6E0087773E /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		7604D798185B6E6E0087773E /* TestChat.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = TestChat.app;
-			remoteRef = 7604D797185B6E6E0087773E /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		7604D705185B499D0087773E /* Resources */ = {
