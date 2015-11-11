@@ -1,0 +1,37 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "65D58A67FEF44BCFD55A1DA7714DB9E9B2A1548B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "65D58A67FEF44BCFD55A1DA7714DB9E9B2A1548B" : 0,
+    "4D27C913E0ECA06529FB4747C222924453186811" : 0,
+    "ABB939127996C66F7E852A780552ADEEF03C6B13" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "3C40B032-8DEA-48F5-9110-C80C27A7DA95",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "65D58A67FEF44BCFD55A1DA7714DB9E9B2A1548B" : "MDWamp\/",
+    "4D27C913E0ECA06529FB4747C222924453186811" : "..",
+    "ABB939127996C66F7E852A780552ADEEF03C6B13" : "MDWamp\/lib\/SocketRocket\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "MDWamp",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "MDWamp.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/ubergrape\/chatgrape_ios",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4D27C913E0ECA06529FB4747C222924453186811"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/ubergrape\/MDWamp.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "65D58A67FEF44BCFD55A1DA7714DB9E9B2A1548B"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/square\/SocketRocket.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "ABB939127996C66F7E852A780552ADEEF03C6B13"
+    }
+  ]
+}
