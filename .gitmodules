@@ -1,6 +1,6 @@
 [submodule "External/SocketRocket"]
 	path = External/SocketRocket
-url=http://github.com/ubergrape/SocketRocket.git
+url=https://github.com/ubergrape/SocketRocket.git
 [submodule "External/msgpack-objectivec"]
 	path = External/msgpack-objectivec
 	url = git://github.com/msgpack/msgpack-objectivec.git
