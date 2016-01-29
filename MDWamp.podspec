@@ -9,8 +9,7 @@ Pod::Spec.new do |s|
   }
   s.source = {
     :git => 'https://github.com/ubergrape/MDWamp.git',
-    :branch => 'development',
-:submodules => true
+    :branch => 'development'
   }
 
   s.source_files        = 'MDWamp/**/*.{h,m,c}'
