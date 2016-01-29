@@ -23,7 +23,7 @@
     "summary": "A client side objective-C implementation of the WebSocket subprotocol WAMP",
     "libraries": "icucore",
     "source": {
-        "git": "https://github.com/UberGrape/MDWamp.git",
+        "git": "https://github.com/ubergrape/MDWamp.git",
         "tag": "2.2.1"
     },
     "version": "2.2.1",
@@ -35,5 +35,5 @@
     "authors": {
         "Niko Usai": "mogui83@gmail.com"
     },
-    "homepage": "http://github.com/UberGrape/MDWamp"
+    "homepage": "http://github.com/ubergrape/MDWamp"
 }
