@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
     'Niko Usai' => 'mogui83@gmail.com'
   }
   s.source = {
-    :git => 'https://github.com/mogui/MDWamp.git',
+    :git => 'https://github.com/ubergrape/MDWamp.git',
     :tag => '1.1.0'
   }
 
