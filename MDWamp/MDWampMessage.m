@@ -29,43 +29,76 @@
  */
 - (id) shiftStack
 {
-	__autoreleasing id object = [messageStack objectAtIndex:0];
-	[messageStack removeObjectAtIndex:0];
-	return object;
+    // LUKE: First check, if we got any objects left in the stack
+    if (messageStack.count <= 0) {
+        // We can't get anything, return nil!
+        return nil;
+    }
+    
+    __autoreleasing id object = [messageStack objectAtIndex:0];
+    [messageStack removeObjectAtIndex:0];
+    return object;
 }
 
 - (int) shiftStackAsInt
 {
-	return [[self shiftStack] intValue];
+    id returnValue = [self shiftStack];
+    
+    // LUKE
+    if (returnValue == nil) {
+        // Got nothing, return error code (arbitrary)
+        return -444;
+    }
+    
+    return [returnValue intValue];
 }
 
 - (NSString*) shiftStackAsString
 {
-	return (NSString*)[self shiftStack];
+    
+    id returnValue = [self shiftStack];
+    
+    // LUKE
+    if (returnValue == nil) {
+        // Got nothing, return error code (arbitrary)
+        return @"-444";
+    }
+    
+    return (NSString*)returnValue;
 }
 
 - (NSArray*) getRemainingArgs
 {
-	return [NSArray arrayWithArray:messageStack];
+    return [NSArray arrayWithArray:messageStack];
 }
 
 - (id) initWithResponseArray:(NSArray*)responseArray
 {
-	self = [super init];
-	if (self) {
-		messageStack = [[NSMutableArray alloc] initWithArray: responseArray];
-		type = [[self shiftStack] intValue];
-	}
-	return self;
+    self = [super init];
+    if (self) {
+        messageStack = [[NSMutableArray alloc] initWithArray: responseArray];
+        
+        id returnValue = [self shiftStack];
+        
+        // LUKE
+        if (returnValue == nil) {
+            // Got nothing, return error
+            type = MDWampMessageTypeCallError;
+        } else {
+            type = [returnValue intValue];
+        }
+        
+    }
+    return self;
 }
 
 - (id) initWithResponse:(NSString*)response
 {
     NSData *data = [response dataUsingEncoding:NSUTF8StringEncoding];
-	NSArray *responseArray = (NSArray*)[NSJSONSerialization JSONObjectWithData:data
+    NSArray *responseArray = (NSArray*)[NSJSONSerialization JSONObjectWithData:data
                                                                        options:NSJSONReadingAllowFragments
                                                                          error:nil];
-	return [self initWithResponseArray:responseArray];
+    return [self initWithResponseArray:responseArray];
 }
 
 
