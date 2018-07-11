@@ -76,7 +76,7 @@
  * Returns a new istance with connection configured with given server
  * it does not automatically connect to the ws server
  *
- * @param serverRequest	 url request with full protocol es. ws://websocket.com
+ * @param server	 url request with full protocol es. ws://websocket.com
  * @param delegate		The delegate for this instance
  */
 - (id) initWithURLRequest:(NSURLRequest *)server delegate:(id<MDWampClientDelegate>)delegate;
@@ -85,7 +85,7 @@
  * Convenience method for initWithURLRequest:delegate:
  * delegate can be nil
  *
- * @param serverRequest	 url request with full protocol es. ws://websocket.com
+ * @param server	 url request with full protocol es. ws://websocket.com
  */
 - (id) initWithURLRequest:(NSURLRequest *)server;
 
@@ -95,8 +95,7 @@
  * Returns a new istance with connection configured with given server
  * it does not automatically connect to th ws server
  *
- * @param server		webserver url with full protocol es. ws://websocket.com
- * @param delegate		The delegate for this instance
+ * @param serverURL		webserver url with full protocol es. ws://websocket.com
  */
 - (id) initWithURL:(NSURL *)serverURL;
 
@@ -170,7 +169,7 @@
  * @param authKey		Authentication key, i.e. user or application name
  *                      If undefined, anonymous authentication is performed
  * @param authExtra			Authentication extra information - optional
- * @param secret		Authentication secret (ie password)
+ * @param authSecret		Authentication secret (ie password)
  * @param successBlock  Block to be executed upon sucessful authentication
  * @param errorBlock    Block to be executed upon error during authentication
  */
@@ -186,7 +185,7 @@
  *
  * @param procUri		the URI of the remote procedure to be called
  * @param completeBlock block to be executed on complete if success error is nil, if failure result is nil
- * @param args			zero or more call arguments
+ * @param firstArg			zero or more call arguments
  */
 - (NSString*) call:(NSString*)procUri
           complete:(void(^)(NSString* callURI, id result, NSError *error))completeBlock
